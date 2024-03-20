@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #b37d7d;
+}
+.container-animation-menu {
+  color: #fff;
+  height: 100px;
+  width: 290px;
+}
+.animation-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

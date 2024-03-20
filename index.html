@@ -1,0 +1,118 @@
+<!-- Trang mo dau cho toan bo web -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mo dau The last travel</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #3598b6;
+        position: relative;
+      }
+
+      .top {
+        top: 0;
+      }
+      .upper {
+        bottom: 0;
+      }
+      .top,
+      .upper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        height: 50%;
+      }
+      .al {
+        transition-timing-function: ease;
+        transition-duration: 0.5s;
+        transition-property: line-height, height width, background-color, color,
+          box-shadow;
+      }
+      .al:hover {
+        background-color: #fff !important;
+        color: #3598b6 !important;
+        box-shadow: 0 0 50px #ffffff;
+      }
+      .al:active {
+        width: 225px !important;
+        height: 225px !important;
+        line-height: 225px !important;
+        box-shadow: 0 0 20px #fff;
+      }
+      .container {
+        display: inline-block;
+      }
+      .text {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 10s steps(69), cursor 4s step-end alternate;
+      }
+      @keyframes cursor {
+        50% {
+          border-color: transparent;
+        }
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="top">
+        <div class="container">
+          <p
+            style="
+              font-size: 22px;
+              text-align: center;
+              letter-spacing: 6px;
+              color: #fff;
+            "
+            class="text">
+            Chào mừng đến với <u>The last travel</u> - 1 sản phẩm của nhóm 3 lớp
+            46CNTT1.
+          </p>
+        </div>
+      </div>
+      <div class="upper">
+        <a
+          class="al"
+          style="
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            display: block;
+            line-height: 250px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: transparent;
+            border: #fff 5px solid;
+          "
+          href="./Main - web/index.html">
+          Vào thôi !
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
